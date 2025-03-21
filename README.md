@@ -1,45 +1,61 @@
-# Chatbot with Gemini Models
+# 📌 Mental Health Chatbot
 
-This project is a Streamlit-based chatbot application utilizing various Gemini models for natural language processing. Users can switch between light and dark modes and configure model settings to customize their interactions.
+## 🚀 Overview
+CCP4 is a Python-based application that includes sentiment analysis features and other utility functions. This project uses **Streamlit** for the frontend and **Python** for backend processing.
 
-## Features
+## ✨ Features
+- Sentiment analysis using **TextBlob**
+- Streamlit-based interactive UI
+- Utility functions for data processing
 
-- Toggle between light and dark mode.
-- Choose from three different Gemini models: `Gemini 1.5 Flash`, `Gemini 1.5 Pro`, and `Gemini 1.0 Pro`.
-- Adjust model parameters such as temperature, top-p, top-k, and maximum output tokens.
-- Securely input and use the Gemini API key.
-- Interactive chat interface with history.
+## 📂 Project Structure
+```
+ccp4/
+│-- app.py           # Main Streamlit application
+│-- main.py          # Core logic handling
+│-- sentiment.py     # Sentiment analysis functions
+│-- utils.py         # Helper utility functions
+│-- requirements.txt # Dependencies
+│-- README.md        # Project documentation
+```
 
-## Installation
+## 🛠 Installation
 
-To get started, clone the repository and install the required packages:
+### 1️⃣ Clone the repository
+```sh
+git clone https://github.com/your-username/ccp4.git
+cd ccp4
+```
 
-```bash
-git clone https://github.com/OrenGrinker/geminiChatBot.git
-cd geminiChatBot
+### 2️⃣ Create a virtual environment (optional but recommended)
+```sh
+python -m venv venv
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate     # On Windows
+```
+
+### 3️⃣ Install dependencies
+```sh
 pip install -r requirements.txt
 ```
 
-## Usage
-
-Run the Streamlit application with:
-
-```bash
+## ▶️ Usage
+Run the Streamlit application:
+```sh
 streamlit run app.py
 ```
 
-## Configuration
+## 📦 Dependencies
+The project requires the following Python packages:
+```txt
+streamlit
+textblob
+numpy
+pandas
+```
 
-The application settings can be adjusted via the sidebar:
+## 💡 Contributing
+Feel free to open issues or pull requests if you'd like to contribute.
 
-- Dark Mode: Toggle between light and dark mode.
-- Choose Model: Select from Gemini 1.5 Flash, Gemini 1.5 Pro, or Gemini 1.0 Pro.
-- Temperature: Adjust the creativity of the model's responses.
-- Top P: Control the cumulative probability for token selection.
-- Top K: Limit the number of tokens considered.
-- Max Output Tokens: Set the maximum number of tokens in the response.
-
-## License
-
-his project is licensed under the MIT License. See the LICENSE file for details.
-
+## 📜 License
+This project is licensed under the MIT License.
